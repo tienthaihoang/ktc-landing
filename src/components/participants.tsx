@@ -61,8 +61,10 @@ export default function Participant() {
                     className="w-[38px] h-[38px]"
                   />
                 </div>
-                <h4 className="font-bold text-[16px] mb-2">{item.title}</h4>
-                <p className="text-[#7B7B8C] text-sm">{item.desc}</p>
+                <h4 className="font-bold text-lg md:text-xl mb-2">
+                  {item.title}
+                </h4>
+                <p className="text-[#7B7B8C] text-base">{item.desc}</p>
               </div>
             </AnimationLayout>
           ))}

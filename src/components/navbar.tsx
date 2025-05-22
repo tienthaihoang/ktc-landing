@@ -54,11 +54,11 @@ export default function Navbar() {
         <div
           className={`md:block ${
             state
-              ? "fixed top-[54px] left-0 w-full backdrop-blur-md bg-white/90 z-[100] shadow-sm shadow-[0px_32px_64px_-30px_#0F0F0F1A] p-4"
+              ? "fixed top-[54px] left-0 w-full bg-white z-[100] shadow-sm shadow-[0px_32px_64px_-30px_#0F0F0F1A] p-4"
               : "hidden"
           } md:static md:shadow-none md:px-0`}
         >
-          <ul className="justify-end items-center space-y-3 md:flex md:space-x-6 md:space-y-0">
+          <ul className="justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
             {site.routes.map((item, idx) => {
               return (
                 <li key={idx} className="transition-colors">
