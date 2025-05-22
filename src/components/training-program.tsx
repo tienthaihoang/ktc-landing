@@ -41,7 +41,7 @@ export default function TrainingProgram() {
           <h2 className="text-xl font-bold sm:text-5xl">
             Chương trình thực tập
           </h2>
-          <p className="mt-3 text-base md:text-xl">
+          <p className="mt-8 text-base md:text-xl">
             Tiếng Anh cơ bản, văn hóa làm việc tại Hàn Quốc và thực hành dự án
             thực tế
           </p>
@@ -57,10 +57,10 @@ export default function TrainingProgram() {
                   <Image src={item.icon} alt="icon" width={38} height={38} />
                 </div>
                 <div className="text-left">
-                  <p className="text-xs md:text-base font-bold text-[#A3A3A3]">
+                  <p className="text-xs md:text-sm font-bold text-[#A3A3A3]">
                     {item.title}
                   </p>
-                  <div className="text-lg md:text-2xl font-bold">
+                  <div className="text-lg md:text-xl font-bold">
                     {item.content}
                   </div>
                 </div>

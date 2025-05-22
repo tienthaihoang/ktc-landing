@@ -136,7 +136,7 @@ export default function FAQ() {
       >
         <div className="container">
           <div className="space-y-3 text-center">
-            <h2 className="text-xl md:text-5xl font-bold">
+            <h2 className="text-xl md:text-5xl font-bold md:leading-[62px]">
               Các câu hỏi thường gặp <br />
               về dự án K-Tech College 2025
             </h2>

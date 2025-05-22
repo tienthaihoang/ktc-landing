@@ -15,7 +15,7 @@ export default function Organization() {
     {
       logo: kosmeLogo,
       title:
-        "Cơ quan xúc tiến doanh nghiệp vừa và nhỏ và\n Khởi nghiệp Hàn Quốc",
+        "Cơ quan xúc tiến doanh nghiệp vừa và nhỏ\n và Khởi nghiệp Hàn Quốc",
       desc: "Thúc đẩy sự phát triển của doanh nghiệp thông qua các chương trình hỗ trợ tài chính, đào tạo và kết nối với thị trường quốc tế.",
     },
     {
