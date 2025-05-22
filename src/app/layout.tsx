@@ -69,11 +69,9 @@ export default function RootLayout({
   return (
     <Providers>
       <html lang="en" suppressHydrationWarning className="scroll-smooth">
-        <body className={cn("antialiased pb-14 sm:pb-0", fontSans.className)}>
+        <body className={cn("antialiased", fontSans.className)}>
           {/* <KtcPopup /> */}
           <NextSSRPlugin routerConfig={extractRouterConfig(ourFileRouter)} />
-          {/* <KtcPopup /> */}
-          {/* <Banner /> */}
           <Navbar />
           {children}
           <div className="fixed bottom-10 right-4 sm:bottom-8 sm:right-6 z-50">
@@ -82,7 +80,6 @@ export default function RootLayout({
             </div>
           </div>
           <Footer />
-          {/* <KtcPopup /> */}
           <PhoneCall />
           <ThirdParties />
           <Toaster position="top-center" />

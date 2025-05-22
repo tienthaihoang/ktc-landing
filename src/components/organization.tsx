@@ -31,7 +31,7 @@ export default function Organization() {
   ];
 
   return (
-    <section className="py-[120px]">
+    <section className="py-[60px] md:py-[120px]">
       <AnimationLayout
         className="duration-1000 delay-300"
         isInviewState={{
@@ -41,19 +41,19 @@ export default function Organization() {
       >
         <div className="container">
           <div className="mx-auto md:text-center text-left">
-            <h2 className="text-3xl font-bold sm:text-5xl !leading-[56px]">
+            <h2 className="text-xl text-center font-bold sm:text-5xl">
               Đơn vị tổ chức & đối tác đồng hành
             </h2>
           </div>
-          <div className="mt-[60px]">
+          <div className="mt-8 sm:mt-[60px]">
             <ul className="grid gap-6 text-center sm:grid-cols-2 lg:grid-cols-2">
               {features.map((item, idx) => (
                 <li
                   key={idx}
-                  className="flex flex-col items-center justify-center space-y-3 p-[56px] rounded-[20px] border bg-[#FCFCFD] border-[#EFEEED] shadow-[0px_64px_64px_-48px_#0F0F0F1A]"
+                  className="flex flex-col items-center justify-center space-y-3 p-[56px_16px] sm:p-[56px] rounded-[20px] border bg-[#FCFCFD] border-[#EFEEED] shadow-[0px_64px_64px_-48px_#0F0F0F1A]"
                 >
-                  <Image src={item.logo} alt="logo" className="mx-auto" />
-                  <h4 className="md:text-xl text-lg font-semibold whitespace-pre-line">
+                  <Image src={item.logo} alt="logo" className="mx-auto !mt-4" />
+                  <h4 className="md:text-xl text-[18px] font-semibold whitespace-pre-line">
                     {item.title.split("\n").map((line, i) => (
                       <span key={i}>
                         {line}
@@ -61,7 +61,7 @@ export default function Organization() {
                       </span>
                     ))}
                   </h4>
-                  <div>{item.desc}</div>
+                  <div className="text-sm !mt-5">{item.desc}</div>
                 </li>
               ))}
             </ul>

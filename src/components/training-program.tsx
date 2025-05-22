@@ -35,32 +35,34 @@ export default function TrainingProgram() {
   ];
 
   return (
-    <section className="py-[100px]" id="chuong-trinh-dao-tao">
+    <section className="py-[40px] md:py-[100px]" id="chuong-trinh-dao-tao">
       <div className="container">
-        <div className="max-w mx-auto md:text-center text-left">
-          <h2 className="text-3xl font-bold sm:text-5xl uppercase !leading-[56px]">
+        <div className="max-w mx-auto text-center">
+          <h2 className="text-xl font-bold sm:text-5xl">
             Chương trình thực tập
           </h2>
-          <p className="mt-3 text-xl">
+          <p className="mt-3 text-base md:text-xl">
             Tiếng Anh cơ bản, văn hóa làm việc tại Hàn Quốc và thực hành dự án
             thực tế
           </p>
         </div>
-        <div className="mt-[60px] flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+        <div className="mt-8 md:mt-[60px] flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
           <div className="flex flex-col w-full lg:w-1/2 space-y-2">
             {text.map((item, idx) => (
               <div
                 key={idx}
                 className="flex items-center gap-4 rounded-xl bg-[#FCFCFD] p-3 min-h-[100px]"
               >
-                <div className="flex-shrink-0 w-[60px] h-[60px] flex items-center justify-center rounded-lg bg-gradient-to-br from-[#FFF0F1] to-[#E0F0FE]">
-                  <Image src={item.icon} alt="icon" width={32} height={32} />
+                <div className="flex-shrink-0 w-[76px] h-[76px] flex items-center justify-center rounded-lg bg-gradient-to-br from-[#FFF0F1] to-[#E0F0FE]">
+                  <Image src={item.icon} alt="icon" width={38} height={38} />
                 </div>
                 <div className="text-left">
-                  <p className="text-base font-bold text-[#A3A3A3]">
+                  <p className="text-xs md:text-base font-bold text-[#A3A3A3]">
                     {item.title}
                   </p>
-                  <div className="text-2xl font-bold">{item.content}</div>
+                  <div className="text-lg md:text-2xl font-bold">
+                    {item.content}
+                  </div>
                 </div>
               </div>
             ))}

@@ -17,10 +17,10 @@ export default function Contact() {
   ];
 
   return (
-    <section className="py-[100px]">
+    <section className="py-[60px] md:py-[100px]">
       <div className="container">
-        <div className="max-w-2xl mx-auto md:text-center text-left">
-          <h2 className="text-3xl font-semibold sm:text-5xl">Liên hệ</h2>
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-xl font-semibold sm:text-5xl">Liên hệ</h2>
         </div>
         <div>
           <ul className="mt-4 sm:mt-8 flex flex-col items-center gap-y-2 sm:gap-y-4">
@@ -29,7 +29,7 @@ export default function Contact() {
                 key={idx}
                 className="flex items-center gap-x-3 justify-center"
               >
-                <h4 className="sr-only text-lg font-medium">{item.title}</h4>
+                <h4 className="sr-only text-xl font-medium">{item.title}</h4>
                 <div className="mt-2 flex gap-x-3">
                   <Image
                     src={item.icon}

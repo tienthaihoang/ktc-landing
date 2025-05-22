@@ -11,8 +11,6 @@ export async function POST(request: Request) {
       status: 400,
     });
 
-  console.log(registerValidator.data);
-
   try {
     await doc.loadInfo();
     const sheet = doc.sheetsByIndex[0];

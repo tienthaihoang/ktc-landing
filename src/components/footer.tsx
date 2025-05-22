@@ -32,18 +32,20 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#F8F8F8] pb-5">
-      <div className="container mx-auto">
-        <div className="flex justify-between pt-[64px]">
+    <footer className="bg-[#F8F8F8]">
+      <div className="container mx-auto py-[60px] md:py-[64px]">
+        <div className="flex flex-col sm:flex-row gap-6 justify-between">
           <div className="flex-1">
-            <Image src={logo} alt="LIKELION" className="" height={36} />
-            <p className="leading-relaxed mt-4 text-[15px] text-[#666666]">
+            <Link href="/">
+              <Image src={logo} alt="LIKELION" className="" height={36} />
+            </Link>
+            <p className="leading-relaxed mt-6 md:mt-4 text-[15px] text-[#666666]">
               Khám phá tiềm năng công nghệ của bạn với K-Tech
               <br />
               Mở rộng tư duy, phát triển kỹ năng và kết nối với doanh nghiệp Hàn
               Quốc.
             </p>
-            <ul className="flex items-center space-x-4 mt-10">
+            <ul className="flex items-center space-x-4 mt-6 md:mt-10">
               {socials.map((social, idx) => (
                 <li
                   className="w-10 h-10 border rounded-full flex items-center justify-center"
@@ -63,7 +65,7 @@ export default function Footer() {
           </div>
           <ul className="justify-center flex-col space-y-5 sm:flex sm:space-x-4 sm:space-y-0 sm:w-1/4">
             {site.routes.map((item, idx) => (
-              <li key={idx} className="hover:text-gray-800 !ml-0 py-[8px]">
+              <li key={idx} className="hover:text-gray-800 !ml-0 md:py-[8px] ">
                 <Link className="block w-full font-semibold" href={item.path}>
                   {item.title}
                 </Link>
@@ -71,11 +73,8 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-        <div className="mt-8 items-center justify-between sm:flex pt-4">
-          <div className="mt-4 sm:mt-0">
-            &copy; 2025 LIKELION All rights reserved.
-          </div>
-          <div className="mt-6 sm:mt-0"></div>
+        <div className="mt-8 items-center text-xs justify-between sm:flex sm:pt-4">
+          &copy; 2025 LIKELION All rights reserved.
         </div>
       </div>
     </footer>

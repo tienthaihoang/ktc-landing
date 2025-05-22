@@ -30,7 +30,7 @@ const text = [
 
 export default function AboutUs() {
   return (
-    <section id="ve-chung-toi" className="bg-[#F2FAFF] py-[120px]">
+    <section id="gioi-thieu" className="bg-[#F2FAFF] py-[60px] md:py-[120px]">
       <div className="container">
         <div className="space-y-12">
           {text.map((item, idx) => (
@@ -58,7 +58,7 @@ export default function AboutUs() {
 
                 <div className="mt-6 gap-12 sm:mt-0 md:flex lg:block">
                   <div className="max-w-2xl">
-                    <h3 className="text-gray-800 text-3xl font-bold sm:text-5xl mb-4">
+                    <h3 className="text-gray-800 text-[20px] text-center font-bold sm:text-5xl mb-4">
                       {item.title}
                     </h3>
                     <div className="[&_p]:mb-3">{item.description}</div>

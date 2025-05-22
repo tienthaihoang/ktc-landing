@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import AnimationLayout from "./shared/animation-layout";
 import benefit_1 from "/public/benefit_1.jpg";
-import benefit_2 from "/public/benefit_2.jpg";
-import benefit_3 from "/public/benefit_3.jpg";
-import benefit_4 from "/public/benefit_4.jpg";
+import benefit_2 from "/public/benefit_2.png";
+import benefit_3 from "/public/benefit_3.png";
+import benefit_4 from "/public/benefit_4.png";
 
 export default function Benefits() {
   const features = [
@@ -45,7 +45,7 @@ export default function Benefits() {
   ];
 
   return (
-    <section className="py-[120px]">
+    <section className="py-[60px] md:py-[120px]">
       <AnimationLayout
         className="duration-1000 delay-300"
         isInviewState={{
@@ -54,15 +54,15 @@ export default function Benefits() {
         }}
       >
         <div className="container">
-          <div className="max-w-2xl mx-auto md:text-center text-left">
-            <h2 className="text-3xl font-semibold sm:text-5xl !leading-[56px]">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-xl font-semibold sm:text-5xl">
               Quyền lợi ứng viên
             </h2>
-            <p className="mt-3">
+            <p className="mt-3 text-[16px]">
               Ứng tuyển tham gia K-Tech College 2025, bạn sẽ được
             </p>
           </div>
-          <div className="mt-[120px] space-y-12">
+          <div className="mt-[56px] md:mt-[120px] space-y-12">
             {features.map((item, idx) => (
               <AnimationLayout
                 className="duration-1000 delay-300"
@@ -74,11 +74,11 @@ export default function Benefits() {
               >
                 <div
                   className={cn(
-                    "mx-auto hidden lg:flex gap-x-[100px] items-stretch md:pb-8",
-                    idx % 2 !== 1 && "flex-row-reverse"
+                    "mx-auto flex flex-col-reverse md:flex-row gap-x-[100px] items-stretch md:pb-8",
+                    idx % 2 !== 1 ? "md:flex-row-reverse" : "md:flex-row"
                   )}
                 >
-                  <div className="w-1/2">
+                  <div className="w-full md:w-1/2">
                     <div className="w-full h-full">
                       <Image
                         src={item.image}
@@ -88,11 +88,11 @@ export default function Benefits() {
                     </div>
                   </div>
 
-                  <div className="w-1/2 flex flex-col justify-center text-left">
-                    <h3 className="text-3xl font-semibold sm:text-4xl mb-4">
+                  <div className="w-full md:w-1/2 flex flex-col justify-center text-left">
+                    <h3 className="text-[18px] font-semibold sm:text-4xl mb-3 md:mb-4">
                       {item.title}
                     </h3>
-                    <div className="[&_p]:mb-3">{item.desc}</div>
+                    <div className="text-sm md:text-base mb-4">{item.desc}</div>
                   </div>
                 </div>
               </AnimationLayout>

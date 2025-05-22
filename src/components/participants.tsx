@@ -33,14 +33,17 @@ const text = [
 
 export default function Participant() {
   return (
-    <section id="doi-tuong-tham-gia" className="bg-[#F5FAFF] py-[120px]">
+    <section
+      id="doi-tuong-tham-gia"
+      className="bg-[#F5FAFF] py-[60px] md:py-[120px]"
+    >
       <div className="container">
         <div className="mx-auto md:text-center text-left">
-          <h2 className="text-3xl font-bold sm:text-5xl !leading-[56px]">
+          <h2 className="text-xl text-center font-bold sm:text-5xl">
             Đối tượng tham gia
           </h2>
         </div>
-        <div className="mt-[60px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-8 md:mt-[60px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {text.map((item, idx) => (
             <AnimationLayout
               className="h-full duration-1000 delay-300"
@@ -51,8 +54,12 @@ export default function Participant() {
               key={idx}
             >
               <div className="h-full bg-white rounded-[20px] p-[32px_16px] flex flex-col items-center text-center shadow-[0px_64px_64px_-48px_#0F0F0F1A]">
-                <div className="w-[64px] h-[64px] flex items-center justify-center rounded-full bg-gradient-to-br from-[#FDEFF3] via-[#EEF6FF] to-[#EEF6FF] mb-4">
-                  <Image src={item.icon} alt="icon" className="w-8 h-8" />
+                <div className="w-[80px] h-[80px] flex items-center justify-center rounded-full bg-gradient-to-br from-[#FDEFF3] via-[#EEF6FF] to-[#EEF6FF] mb-8">
+                  <Image
+                    src={item.icon}
+                    alt="icon"
+                    className="w-[38px] h-[38px]"
+                  />
                 </div>
                 <h4 className="font-bold text-[16px] mb-2">{item.title}</h4>
                 <p className="text-[#7B7B8C] text-sm">{item.desc}</p>
@@ -60,7 +67,7 @@ export default function Participant() {
             </AnimationLayout>
           ))}
         </div>
-        <div className="mt-[60px] flex flex-col md:flex-row items-center justify-center text-sm font-medium gap-x-3 gap-y-4">
+        <div className="mt-10 md:mt-[60px] flex flex-col md:flex-row items-center justify-center text-sm font-medium gap-x-3 gap-y-4">
           <Button size="lg" className="w-full md:w-auto" asChild>
             <Link href={site.registrationUrl} target="_blank">
               Ứng tuyển ngay

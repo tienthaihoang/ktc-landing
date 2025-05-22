@@ -2,7 +2,7 @@ import RegisterForm from "../../components/forms/register-form";
 
 export default function page() {
   return (
-    <section id="dang-ky" className="relative py-14 bg-[#101416]">
+    <section id="dang-ky" className="relative mt-[74px] py-14 bg-[#101416]">
       <div>
         <div className="relative z-10 container">
           <div className="max-w-xl space-y-3 px-4 sm:mx-auto sm:text-center sm:px-0">

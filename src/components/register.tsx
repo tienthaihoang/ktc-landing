@@ -1,5 +1,4 @@
 import RegisterForm from "./forms/register-form";
-import AnimationLayout from "./shared/animation-layout";
 
 export default function Register() {
   return (

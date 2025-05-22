@@ -35,7 +35,7 @@ const FaqsCard = (props: FaqsCardProps) => {
       key={idx}
     >
       <h4
-        className="cursor-pointer flex items-center justify-between text-lg font-semibold px-6 pt-6 pb-2"
+        className="cursor-pointer flex items-center justify-between text-base md:text-lg font-semibold px-6 pt-6 pb-2"
         onClick={handleOpenAnswer}
       >
         {faqsList.q}
@@ -76,7 +76,7 @@ const FaqsCard = (props: FaqsCardProps) => {
         className="duration-300 px-6"
         style={state ? { height: answerH } : { height: "0px" }}
       >
-        <div className="">{faqsList.a}</div>
+        <div className="text-sm md:text-base">{faqsList.a}</div>
       </div>
     </div>
   );
@@ -126,7 +126,7 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="leading-relaxed py-[80px]" id="faqs">
+    <section className="leading-relaxed py-[40px] md:py-[80px]" id="faqs">
       <AnimationLayout
         className="duration-1000 delay-300"
         isInviewState={{
@@ -136,12 +136,12 @@ export default function FAQ() {
       >
         <div className="container">
           <div className="space-y-3 text-center">
-            <h2 className="text-5xl font-bold leading-[62px]">
+            <h2 className="text-xl md:text-5xl font-bold">
               Các câu hỏi thường gặp <br />
               về dự án K-Tech College 2025
             </h2>
           </div>
-          <div className="mt-14 max-w-[740px] mx-auto">
+          <div className="mt-8 md:mt-14 max-w-[740px] mx-auto">
             {faqsList.map((item, idx) => (
               <FaqsCard key={idx} idx={idx} faqsList={item} />
             ))}

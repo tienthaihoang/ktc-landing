@@ -28,9 +28,9 @@ const steps = [
 
 export default function Process() {
   return (
-    <div className="container py-[120px]">
-      <div className="max-w-2xl mx-auto md:text-center text-left">
-        <h2 className="text-3xl font-semibold sm:text-5xl !leading-[56px]">
+    <div className="container py-[40px] md:py-[120px]">
+      <div className="max-w-2xl mx-auto text-center">
+        <h2 className="text-xl font-semibold sm:text-5xl">
           Quy trình xét tuyển
         </h2>
       </div>
@@ -41,7 +41,7 @@ export default function Process() {
           falseState: "opacity-0",
         }}
       >
-        <div className="mt-[60px] max-w-[594px] mx-auto space-y-[30px]">
+        <div className="mt-8 md:mt-[60px] max-w-[594px] mx-auto space-y-[30px]">
           {steps.map((step, index) => (
             <div key={index} className="flex items-center gap-y-[30px]">
               <div className="relative flex items-center justify-start min-w-[112px] h-[77px] gap-x-[15px]">
@@ -52,8 +52,10 @@ export default function Process() {
               </div>
 
               <div className="text-left">
-                <p className="text-base font-bold">{step.title}</p>
-                <p className="text-sm text-[#7B7B8C]">{step.description}</p>
+                <p className="text-base md:text-xl font-bold">{step.title}</p>
+                <p className="text-sm mt-2 md:text-base text-[#7B7B8C]">
+                  {step.description}
+                </p>
               </div>
             </div>
           ))}

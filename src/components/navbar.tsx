@@ -11,14 +11,14 @@ export default function Navbar() {
   const [state, setState] = useState(false);
 
   return (
-    <nav className="border-b border-orange-400/50 w-full md:relative md:text-sm md:border-none z-50">
-      <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
+    <nav className=" fixed top-0 left-0 w-full backdrop-blur-md bg-white/70 shadow-sm md:text-sm md:border-none z-[999]">
+      <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:justify-between md:px-8">
         <div className="flex items-center justify-between py-3 md:py-6 md:block">
           <Link href="/">
             <Image src={logo} alt="LIKELION" className="h-6 md:h-7 w-auto" />
           </Link>
-          <div className="md:hidden">
-            <button className="text-white" onClick={() => setState(!state)}>
+          <div className="block md:hidden">
+            <button onClick={() => setState(!state)}>
               {state ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -52,11 +52,13 @@ export default function Navbar() {
           </div>
         </div>
         <div
-          className={`flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-            state ? "block" : "hidden"
-          }`}
+          className={`md:block ${
+            state
+              ? "fixed top-[54px] left-0 w-full backdrop-blur-md bg-white/90 z-[100] shadow-sm shadow-[0px_32px_64px_-30px_#0F0F0F1A] p-4"
+              : "hidden"
+          } md:static md:shadow-none md:px-0`}
         >
-          <ul className="justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
+          <ul className="justify-end items-center space-y-3 md:flex md:space-x-6 md:space-y-0">
             {site.routes.map((item, idx) => {
               return (
                 <li key={idx} className="transition-colors">
@@ -68,7 +70,7 @@ export default function Navbar() {
             })}
             <div className="space-y-3 items-center gap-x-6 md:flex md:space-y-0">
               <li>
-                <Button className="w-full md:w-auto" asChild>
+                <Button className="w-2/3 md:w-auto" asChild>
                   <Link href={site.registrationUrl} target="_blank">
                     Ứng tuyển ngay
                   </Link>
