@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     siteName: "K-Tech College",
     images: [
       {
-        url: "/opengraph-image-v2.png",
+        url: "/opengraph-image.jpg",
         width: 1200,
         height: 630,
         alt: "K-Tech College 2025",
