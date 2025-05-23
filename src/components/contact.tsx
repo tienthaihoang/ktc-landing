@@ -20,7 +20,7 @@ export default function Contact() {
     <section className="py-[60px] md:py-[100px]">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-xl font-semibold sm:text-5xl">Liên hệ</h2>
+          <h2 className="text-xl font-bold sm:text-5xl">Liên hệ</h2>
         </div>
         <div>
           <ul className="mt-4 sm:mt-8 flex flex-col items-center gap-y-2 sm:gap-y-4">

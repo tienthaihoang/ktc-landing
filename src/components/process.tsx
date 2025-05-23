@@ -30,9 +30,7 @@ export default function Process() {
   return (
     <div className="container py-[40px] md:py-[120px]">
       <div className="max-w-2xl mx-auto text-center">
-        <h2 className="text-xl font-semibold sm:text-5xl">
-          Quy trình xét tuyển
-        </h2>
+        <h2 className="text-xl font-bold sm:text-5xl">Quy trình xét tuyển</h2>
       </div>
       <AnimationLayout
         className="duration-1000 delay-300"

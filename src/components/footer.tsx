@@ -1,6 +1,9 @@
+"use client";
+
 import { site } from "@/config/site";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import logo from "/public/logo.svg";
 import facebook from "/public/socials/facebook.svg";
 import instagram from "/public/socials/instagram.svg";
@@ -8,6 +11,8 @@ import tiktok from "/public/socials/tiktok.svg";
 import youtube from "/public/socials/youtube.svg";
 
 export default function Footer() {
+  const pathname = usePathname();
+
   const socials = [
     {
       label: "LIKELION Facebook",
@@ -63,15 +68,20 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <ul className="justify-center flex-col space-y-5 sm:flex sm:space-x-4 sm:space-y-0 sm:w-1/4">
-            {site.routes.map((item, idx) => (
-              <li key={idx} className="hover:text-gray-800 !ml-0 md:py-[8px] ">
-                <Link className="block w-full font-semibold" href={item.path}>
-                  {item.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          {pathname !== site.registrationUrl && (
+            <ul className="justify-center flex-col space-y-5 sm:flex sm:space-x-4 sm:space-y-0 sm:w-1/4">
+              {site.routes.map((item, idx) => (
+                <li
+                  key={idx}
+                  className="hover:text-gray-800 !ml-0 md:py-[8px] "
+                >
+                  <Link className="block w-full font-semibold" href={item.path}>
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
         <div className="mt-8 items-center text-xs justify-between sm:flex sm:pt-4">
           &copy; 2025 LIKELION All rights reserved.

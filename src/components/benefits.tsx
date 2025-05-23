@@ -55,7 +55,7 @@ export default function Benefits() {
       >
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-xl font-semibold md:text-5xl md:leading-[62px]">
+            <h2 className="text-xl font-bold md:text-5xl md:leading-[62px]">
               Quyền lợi ứng viên
             </h2>
             <p className="mt-8 text-xl">

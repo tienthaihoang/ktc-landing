@@ -58,7 +58,7 @@ export default function AboutUs() {
 
                 <div className="mt-6 gap-12 sm:mt-0 md:flex lg:block">
                   <div className="max-w-2xl">
-                    <h3 className="text-gray-800 text-[20px] text-center font-bold sm:text-5xl mb-4">
+                    <h3 className="text-gray-800 text-[20px] text-center md:text-left font-bold sm:text-5xl mb-4">
                       {item.title}
                     </h3>
                     <div className="[&_p]:mb-3">{item.description}</div>
