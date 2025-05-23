@@ -21,6 +21,7 @@ const fontSans = FontSans({
   variable: "--font-sans",
 });
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ktc.likelion.edu.vn"),
   title:
     "Dự Án Đào Tạo Miễn Phí Và Giới Thiệu Việc Làm IT Tại Hàn Quốc | K-Tech College",
   description:
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
     siteName: "K-Tech College",
     images: [
       {
-        url: "https://ktc.likelion.edu.vn/opengraph-image.png",
+        url: "/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "K-Tech College 2025",
