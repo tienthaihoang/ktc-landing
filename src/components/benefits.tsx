@@ -58,7 +58,7 @@ export default function Benefits() {
             <h2 className="text-xl font-semibold md:text-5xl md:leading-[62px]">
               Quyền lợi ứng viên
             </h2>
-            <p className="mt-8 text-[16px]">
+            <p className="mt-8 text-xl">
               Ứng tuyển tham gia K-Tech College 2025, bạn sẽ được
             </p>
           </div>
