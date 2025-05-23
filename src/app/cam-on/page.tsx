@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "k-tech job fair 2025",
   ],
   openGraph: {
-    url: "./opengraph-image.jpg",
+    url: "./opengraph-image-v2.jpg",
   },
   metadataBase: new URL(site.baseUrl),
   formatDetection: {
