@@ -15,13 +15,14 @@ import { extractRouterConfig } from "uploadthing/server";
 
 import { ourFileRouter } from "@/app/api/uploadthing/core";
 import MessengerChat from "@/components/messenger";
+import { site } from "@/config/site";
 
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 });
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ktc.likelion.edu.vn"),
+  metadataBase: new URL(site.baseUrl),
   title:
     "Dự Án Đào Tạo Miễn Phí Và Giới Thiệu Việc Làm IT Tại Hàn Quốc | K-Tech College",
   description:
