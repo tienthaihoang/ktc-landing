@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   title:
     "Dự Án Đào Tạo Miễn Phí Và Giới Thiệu Việc Làm IT Tại Hàn Quốc | K-Tech College",
   description:
-    "Là dự án được tài trợ 100% bởi Bộ Doanh nghiệp vừa và nhỏ và khởi nghiệp Hàn Quốc. Người đăng ký tham gia sẽ được đào tạo miễn phí kiến thức lập trình Web/Back-end, và được giới thiệu việc làm đến các Doanh nghiệp tại Hàn Quốc. Nếu đạt kết quả đầu ra đúng yêu cầu tuyển dụng, người học sẽ được hỗ trợ chuẩn bị hồ sơ xét cấp visa và đào tạo bổ sung kỹ năng mềm như tiếng Hàn Quốc, văn hóa doanh nghiệp, kỹ năng phỏng vấn và kiến thức kinh doanh cơ bản. Chương trình nhằm đảm bảo cung cấp cho người học đây đủ các kiến thức và kỹ năng để có thể làm việc và hòa nhập tốt tại các doanh nghiệp ở Hàn Quốc. ",
+    "K-Tech College 2025 là chương trình thực tập sinh đặc biệt, cung cấp cho các lập trình viên các kỹ năng cần thiết, hiểu rõ về văn hóa làm việc tại Hàn Quốc và tạo điều kiện để bạn tìm được công việc mong muốn tại Hàn Quốc.",
   keywords: [
     "LIKELION",
     "Hàn Quốc",
@@ -47,7 +47,22 @@ export const metadata: Metadata = {
     "dự án đào tạo nhân lực IT từ bộ doanh nghiệp Hàn Quốc",
   ],
   openGraph: {
-    url: "./opengraph-image.jpg",
+    title:
+      "Dự Án Đào Tạo Miễn Phí Và Giới Thiệu Việc Làm IT Tại Hàn Quốc | K-Tech College",
+    description:
+      "K-Tech College 2025 là chương trình thực tập sinh đặc biệt, cung cấp cho các lập trình viên các kỹ năng cần thiết, hiểu rõ về văn hóa làm việc tại Hàn Quốc và tạo điều kiện để bạn tìm được công việc mong muốn tại Hàn Quốc.",
+    url: "https://ktc.likelion.edu.vn",
+    siteName: "K-Tech College",
+    images: [
+      {
+        url: "https://ktc.likelion.edu.vn/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "K-Tech College 2025",
+      },
+    ],
+    locale: "vi_VN",
+    type: "website",
   },
   formatDetection: {
     email: true,
