@@ -68,7 +68,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          {pathname !== site.registrationUrl && pathname !== "cam-on" && (
+          {pathname !== site.registrationUrl && pathname !== "/cam-on" && (
             <ul className="justify-center flex-col space-y-5 sm:flex sm:space-x-4 sm:space-y-0 sm:w-1/4">
               {site.routes.map((item, idx) => (
                 <li
