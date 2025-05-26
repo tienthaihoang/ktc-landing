@@ -66,7 +66,10 @@ export default function RegisterForm() {
 
   async function onSubmit(values: IRegisterForm) {
     const { cv_file, ...restData } = values;
-    console.log(restData);
+    if (!cv_file) {
+      mutate(restData);
+      return;
+    }
     const selectedFiles = new Array(cv_file);
     const result = await startUpload(selectedFiles);
     if (result) {
@@ -168,7 +171,6 @@ export default function RegisterForm() {
           isSubmitting={isSubmitting}
           form={form}
           required
-          // onChange={(e) => field.onChange(parseInt(e.target.value) || 0)}
         />
 
         <FormFieldInput
@@ -184,7 +186,7 @@ export default function RegisterForm() {
           control={form.control}
           name="cv_file"
           render={({ field }) => (
-            <FormItemWrapper label="Tải lên CV (Định dạng PDF)" required>
+            <FormItemWrapper label="Tải lên CV (Định dạng PDF)">
               <CVDropzone
                 disabled={isSubmitting}
                 onChange={(files) => {

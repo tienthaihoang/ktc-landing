@@ -42,13 +42,16 @@ export const registerDataSchema = z.object({
     .int()
     .min(0, "Vui lòng nhập đúng số năm kinh nghiệm"),
   major: z.string().min(2, "Vui lòng không bỏ trống thông tin"),
-  // apply: z.date(),
-  cv_url: z
-    .string()
-    .url({ message: "Invalid URL format" })
-    .refine((url) => url.endsWith(".pdf"), {
-      message: "URL must point to a PDF file",
-    }),
+  cv_url: z.preprocess(
+    (val) => (val === "" ? undefined : val),
+    z
+      .string()
+      .url({ message: "Invalid URL format" })
+      .refine((url) => url.endsWith(".pdf"), {
+        message: "URL must point to a PDF file",
+      })
+      .optional()
+  ),
   referral_source: z
     .string()
     .min(1, { message: "Vui lòng không bỏ trống thông tin" }),
@@ -57,14 +60,18 @@ export const registerDataSchema = z.object({
 export const registerFormSchema = registerDataSchema
   .omit({ cv_url: true })
   .extend({
-    cv_file: z
-      .instanceof(File, { message: "Vui lòng không bỏ trống thông tin" })
-      .refine((file) => file.type === "application/pdf", {
-        message: "Chỉ cho phép tệp PDF",
-      })
-      .refine((file) => file.size <= MAX_FILE_SIZE * 1024 * 1024, {
-        message: `Kích thước tệp không được vượt quá 4MB`,
-      }),
+    cv_file: z.union([
+      z
+        .instanceof(File)
+        .refine((file) => file.type === "application/pdf", {
+          message: "Chỉ cho phép tệp PDF",
+        })
+        .refine((file) => file.size <= MAX_FILE_SIZE * 1024 * 1024, {
+          message: `Kích thước tệp không được vượt quá 4MB`,
+        }),
+      z.undefined(), // Cho phép không có file
+      z.null(), // Trường hợp trả về null
+    ]),
     agree: z.boolean().refine((val) => val === true, {
       message: "Bạn phải đồng ý với Chính sách bảo mật để tiếp tục.",
     }),
