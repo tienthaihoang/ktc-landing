@@ -19,7 +19,7 @@ export default function Navbar() {
           <Link href="/">
             <Image src={logo} alt="LIKELION" className="h-6 md:h-7 w-auto" />
           </Link>
-          {pathname === site.baseUrl && (
+          {pathname !== site.registrationUrl && pathname !== "cam-on" && (
             <div className="block md:hidden">
               <button onClick={() => setState(!state)}>
                 {state ? (
@@ -55,7 +55,7 @@ export default function Navbar() {
             </div>
           )}
         </div>
-        {pathname === site.baseUrl && (
+        {pathname !== site.registrationUrl && pathname !== "/cam-on" && (
           <div
             className={`md:block ${
               state
