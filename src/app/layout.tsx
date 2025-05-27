@@ -111,7 +111,9 @@ export default function RootLayout({
           />
         </head>
         <body className={cn("antialiased", fontSans.className)}>
-          <Analytics />
+          <Suspense fallback={null}>
+            <Analytics />
+          </Suspense>
           <FacebookPixel />
           {/* <KtcPopup /> */}
           <NextSSRPlugin routerConfig={extractRouterConfig(ourFileRouter)} />
