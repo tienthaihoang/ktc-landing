@@ -19,6 +19,7 @@ import FacebookPixel from "@/components/facebookPixel";
 import MessengerChat from "@/components/messenger";
 import { GA_MEASUREMENT_ID } from "@/lib/gtag";
 import Script from "next/script";
+import { Suspense } from "react";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -115,7 +116,7 @@ export default function RootLayout({
           {/* <KtcPopup /> */}
           <NextSSRPlugin routerConfig={extractRouterConfig(ourFileRouter)} />
           <Navbar />
-          {children}
+          <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
           <div className="fixed bottom-10 right-4 sm:bottom-8 sm:right-6 z-50">
             <div className="flex flex-col gap-4">
               <MessengerChat />
