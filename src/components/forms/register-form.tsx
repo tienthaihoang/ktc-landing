@@ -65,6 +65,11 @@ export default function RegisterForm() {
   });
 
   async function onSubmit(values: IRegisterForm) {
+    // Track Facebook Pixel
+    if (typeof window !== "undefined" && typeof window.fbq === "function") {
+      window.fbq("track", "SubmitApplication");
+    }
+
     const { cv_file, ...restData } = values;
     if (!cv_file) {
       mutate(restData);
@@ -135,34 +140,6 @@ export default function RegisterForm() {
             </FormItemWrapper>
           )}
         />
-        {/* <FormField
-          control={form.control}
-          name="status"
-          render={({ field }) => (
-            <FormItemWrapper label="Vị trí hiện tại" required>
-              <RadioGroup
-                onValueChange={field.onChange}
-                defaultValue={field.value?.toString()}
-                className="flex flex-col space-y-1"
-                disabled={isSubmitting}
-              >
-                {STATUS_OPTIONS.map((status) => (
-                  <FormItem
-                    key={status.value}
-                    className="flex items-center space-x-3 space-y-0"
-                  >
-                    <FormControl>
-                      <RadioGroupItem value={status.value} />
-                    </FormControl>
-                    <FormLabel className="font-normal">
-                      {status.label}
-                    </FormLabel>
-                  </FormItem>
-                ))}
-              </RadioGroup>
-            </FormItemWrapper>
-          )}
-        /> */}
         <FormFieldInput
           name="experience_years"
           label="Số năm kinh nghiệm"

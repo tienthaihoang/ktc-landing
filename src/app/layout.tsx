@@ -15,6 +15,7 @@ import { extractRouterConfig } from "uploadthing/server";
 
 import { ourFileRouter } from "@/app/api/uploadthing/core";
 import Analytics from "@/components/analytics";
+import FacebookPixel from "@/components/facebookPixel";
 import MessengerChat from "@/components/messenger";
 import { GA_MEASUREMENT_ID } from "@/lib/gtag";
 import Script from "next/script";
@@ -110,6 +111,7 @@ export default function RootLayout({
         </head>
         <body className={cn("antialiased", fontSans.className)}>
           <Analytics />
+          <FacebookPixel />
           {/* <KtcPopup /> */}
           <NextSSRPlugin routerConfig={extractRouterConfig(ourFileRouter)} />
           <Navbar />
