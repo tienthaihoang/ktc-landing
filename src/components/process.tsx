@@ -62,23 +62,24 @@ export default function Process() {
             K-Tech College 2025 sẽ diễn ra như thế nào?
           </p>
         </div>
+
         <div className="mt-8 md:mt-[60px] grid grid-cols-1 md:grid-cols-2 gap-[40px]">
           {/* Cột applySteps */}
-          <div className="space-y-[30px]">
-            <h3 className="text-lg md:text-2xl font-semibold mb-2 text-center md:text-left">
+          <div className="grid grid-rows-[auto,1fr,1fr,1fr,1fr] gap-[30px]">
+            <h3 className="text-lg md:text-2xl font-bold text-[#FF99AC] text-center md:text-left row-span-1">
               Ứng tuyển
             </h3>
             {applySteps.map((step, index) => (
-              <div key={index} className="flex items-center gap-y-[30px]">
-                <div className="relative flex items-center justify-start min-w-[112px] h-[77px] gap-x-[15px]">
-                  <span className="text-[64px] font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#FFF0F1] to-[#E0F0FE] leading-none">
+              <div key={index} className="flex items-start gap-x-4 h-full">
+                <div className="relative flex items-center justify-start min-w-[80px] h-[60px]">
+                  <span className="text-[48px] font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#FFF0F1] to-[#E0F0FE] leading-none">
                     {`0${index + 1}`}
                   </span>
-                  <span className="absolute bottom-4 right-5 w-2 h-2 rounded-full bg-[#F84C63]"></span>
+                  <span className="absolute bottom-1 right-2 w-2 h-2 rounded-full bg-[#F84C63]"></span>
                 </div>
-                <div className="text-left">
+                <div className="text-left flex-1">
                   <p className="text-base md:text-xl font-bold">{step.title}</p>
-                  <p className="text-sm mt-2 md:text-base text-[#7B7B8C]">
+                  <p className="text-sm mt-1 md:text-base text-[#7B7B8C]">
                     {step.description}
                   </p>
                 </div>
@@ -87,21 +88,21 @@ export default function Process() {
           </div>
 
           {/* Cột connectSteps */}
-          <div className="space-y-[30px]">
-            <h3 className="text-lg md:text-2xl font-semibold mb-2 text-center md:text-left">
+          <div className="grid grid-rows-[auto,1fr,1fr,1fr,1fr] gap-[30px]">
+            <h3 className="text-lg md:text-2xl font-bold text-[#FF99AC] text-center md:text-left row-span-1">
               Kết nối
             </h3>
             {connectSteps.map((step, index) => (
-              <div key={index} className="flex items-center gap-y-[30px]">
-                <div className="relative flex items-center justify-start min-w-[112px] h-[77px] gap-x-[15px]">
-                  <span className="text-[64px] font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#FFF0F1] to-[#E0F0FE] leading-none">
+              <div key={index} className="flex items-start gap-x-4 h-full">
+                <div className="relative flex items-center justify-start min-w-[80px] h-[60px]">
+                  <span className="text-[48px] font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#FFF0F1] to-[#E0F0FE] leading-none">
                     {`0${index + 1}`}
                   </span>
-                  <span className="absolute bottom-4 right-5 w-2 h-2 rounded-full bg-[#F84C63]"></span>
+                  <span className="absolute bottom-1 right-2 w-2 h-2 rounded-full bg-[#F84C63]"></span>
                 </div>
-                <div className="text-left">
+                <div className="text-left flex-1">
                   <p className="text-base md:text-xl font-bold">{step.title}</p>
-                  <p className="text-sm mt-2 md:text-base text-[#7B7B8C]">
+                  <p className="text-sm mt-1 md:text-base text-[#7B7B8C]">
                     {step.description}
                   </p>
                 </div>

@@ -85,9 +85,9 @@ const FaqsCard = (props: FaqsCardProps) => {
 export default function FAQ() {
   const faqsList = [
     {
-      q: "Chương trình có yêu cầu về độ tuổi và kinh nghiệm của ứng viên không ạ?",
+      q: "Chương trình có yêu cầu về độ tuổi và kinh nghiệm của ứng viên không?",
       a: (
-        <div>
+        <>
           <p>
             Dự án tiếp nhận ứng viên dưới 35 tuổi, lý lịch rõ ràng, không có
             tiền án tiền sự.
@@ -96,28 +96,69 @@ export default function FAQ() {
             Quá trình xét tuyển bao gồm thẩm định hồ sơ, kiểm tra đầu vào và
             phỏng vấn chuyên sâu, không yêu cầu số năm kinh nghiệm cụ thể.
           </p>
-        </div>
+        </>
       ),
     },
     {
-      q: "Các khoá đào tạo có mở thêm không ạ?",
-      a: "Chương trình chỉ được tổ chức một lần trong năm 2025 thôi, vậy nên hãy quyết định nhanh chóng bạn nhé.",
+      q: "Quy trình ứng tuyển diễn ra như thế nào?",
+      a: (
+        <>
+          <p>Ứng tuyển K-Tech College 2025 gồm 4 vòng:</p>
+          <p>1. CV screening (Điền form ứng tuyển)</p>
+          <p>2. Test chuyên môn (Kiến thức lập trình)</p>
+          <p>3. Phỏng vấn soft skill (Online)</p>
+          <p>4. Matching & phỏng vấn với Doanh nghiệp Hàn Quốc (Online)</p>
+          <p>
+            <sup>*</sup>Chúng tôi sẽ tiến hành các vòng tiếp theo nếu bạn vượt
+            qua vòng trước đó. Kết quả sẽ được thông báo qua email trong vòng 7
+            ngày làm việc.
+          </p>
+        </>
+      ),
     },
     {
-      q: "Cuối kỳ thực tập có đánh giá đầu ra không ạ? Tiêu chí đánh giá ra sao?",
-      a: "Thực tập sinh sẽ được đánh giá  trong suốt quá trị thực tập trên các dự án thực tế, đồng thời sẽ được kết nối tham gia phỏng vấn trực tiếp với các doanh nghiệp có nhu cầu tuyển dụng nhân lực. Nếu ứng viên phù hợp với doanh nghiệp sẽ được nhận lời mời làm việc chính thức.",
+      q: "Mất bao lâu để tham gia chương trình K-Tech College 2025?",
+      a: (
+        <>
+          <p>Hoàn tất quy trình ứng tuyển: khoảng 2 tuần</p>
+          <p>
+            Tham gia kết nối và phỏng vấn với doanh nghiệp Hàn Quốc: khoảng 1
+            tháng
+          </p>
+          <p>
+            Tổng thời gian từ lúc ứng tuyển đến khi bắt đầu chương trình cùng
+            doanh nghiệp là khoảng 1,5 tháng (có thể thay đổi tùy tiến độ từng
+            vòng).
+          </p>
+        </>
+      ),
     },
     {
-      q: "Dự án thực tế trong khoá đào tạo có phải là do doanh nghiệp tuyển dụng ra đề?",
-      a: "Đúng vậy. Doanh Nghiệp là người ra đề và học viên dựa theo yêu cầu để thực hiện. Sau đó, doanh nghiệp sẽ đánh giá dựa trên bài nhóm và năng lực từng cá nhân.",
+      q: "Tôi sẽ kết nối với các doanh nghiệp như thế nào?",
+      a: (
+        <>
+          <p>
+            K-Tech College 2025 sẽ cơ hội ứng tuyển với 10 doanh nghiệp KTC 2025
+            có nền tảng tuyển dụng riêng biệt dành cho các ứng viên xuất sắc
+            vượt qua vòng sơ tuyển.
+          </p>
+          <p>
+            Tại đây, bạn sẽ được kết nối trực tiếp với doanh nghiệp Hàn Quốc
+            thông qua hệ thống matching, phỏng vấn online và cơ hội nhận được
+            offer ngay trên nền tảng.
+          </p>
+        </>
+      ),
     },
     {
-      q: "Khi phỏng vấn với doanh nghiệp cần dùng Tiếng Hàn và Tiếng Anh phải không ạ?",
-      a: "Điều này còn dựa vào quy trình tuyển dụng của công ty bạn ứng tuyển, tuy nhiên sẽ có thông dịch viên Hàn-Việt hỗ trợ.",
-    },
-    {
-      q: "Khi làm việc tại Hàn có yêu cầu Tiếng Anh không?",
-      a: "Không yêu cầu, tuy nhiên có tiếng Anh cơ bản sẽ giúp bạn dễ dàng trao đổi công việc và thực hiện các sinh hoạt khác tại Hàn Quốc.",
+      q: "Cần chuẩn bị gì khi tham gia phỏng vấn với doanh nghiệp?",
+      a: (
+        <>
+          <p>CV & Portfolio chỉn chu bằng Tiếng Anh </p>
+          <p>Phỏng vấn 100% bằng Tiếng Anh</p>
+          <p>Luyện tập kỹ năng trả lời phỏng vấn thường xuyên</p>
+        </>
+      ),
     },
     {
       q: "Ứng tuyển K-Tech College 2025 có mất phí không?",
