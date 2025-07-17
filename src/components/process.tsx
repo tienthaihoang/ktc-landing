@@ -75,7 +75,7 @@ export default function Process() {
                   <span className="text-[48px] font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#FFF0F1] to-[#E0F0FE] leading-none">
                     {`0${index + 1}`}
                   </span>
-                  <span className="absolute bottom-1 right-2 w-2 h-2 rounded-full bg-[#F84C63]"></span>
+                  <span className="absolute bottom-[0.75rem] right-2 w-2 h-2 rounded-full bg-[#F84C63]"></span>
                 </div>
                 <div className="text-left flex-1">
                   <p className="text-base md:text-xl font-bold">{step.title}</p>
@@ -98,7 +98,7 @@ export default function Process() {
                   <span className="text-[48px] font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#FFF0F1] to-[#E0F0FE] leading-none">
                     {`0${index + 1}`}
                   </span>
-                  <span className="absolute bottom-1 right-2 w-2 h-2 rounded-full bg-[#F84C63]"></span>
+                  <span className="absolute bottom-[0.75rem] right-2 w-2 h-2 rounded-full bg-[#F84C63]"></span>
                 </div>
                 <div className="text-left flex-1">
                   <p className="text-base md:text-xl font-bold">{step.title}</p>
