@@ -138,9 +138,8 @@ export default function FAQ() {
       a: (
         <>
           <p>
-            K-Tech College 2025 sẽ cơ hội ứng tuyển với 10 doanh nghiệp KTC 2025
-            có nền tảng tuyển dụng riêng biệt dành cho các ứng viên xuất sắc
-            vượt qua vòng sơ tuyển.
+            KTC 2025 có nền tảng tuyển dụng riêng biệt dành cho các ứng viên
+            xuất sắc vượt qua vòng sơ tuyển.
           </p>
           <p>
             Tại đây, bạn sẽ được kết nối trực tiếp với doanh nghiệp Hàn Quốc
