@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import Link from "next/link";
 import AnimationLayout from "./shared/animation-layout";
 import benefit_1 from "/public/benefit_1.jpg";
 import benefit_2 from "/public/benefit_2.png";
@@ -10,37 +9,24 @@ import benefit_4 from "/public/benefit_4.png";
 export default function Benefits() {
   const features = [
     {
-      image: benefit_1,
-      title: "Đào tạo kỹ năng và thực hành trên dự án thực tế",
-      desc: "Thực hành trên các dự án thực tế của các doanh nghiệp Hàn Quốc nâng cao chuyên môn làm việc. Được tham gia đạo kỹ năng mềm và văn hóa làm việc Hàn Quốc.",
-    },
-    {
       image: benefit_2,
-      title: "Lợi ích thiết thực sau kỳ thực tập",
-      desc: "Cơ hội tham gia đào tạo ngắn hạn miễn phí tại Hàn Quốc, nhận học bổng cuối kỳ thực tập và được đào tạo bổ sung kỹ năng tiếng Anh chuyên ngành Business.",
-    },
-    {
-      image: benefit_3,
-      title: "Cơ hội nhận offer làm việc tại Hàn Quốc",
-      desc: "Sau khi hoàn thành 3 tháng thực tập với kết quả tốt, ứng viên có thể nhận được offer làm việc từ công ty Hàn Quốc. Những thực tập sinh được nhận offer sẽ được hỗ trợ tư vấn thủ tục xin VISA làm việc tại Hàn Quốc.",
+      title: "Kết nối trực tiếp với doanh nghiệp công nghệ Hàn Quốc",
+      desc: " Tham gia vào mạng lưới hơn 50 công ty đang tìm kiếm nhân sự công nghệ tại Việt Nam.",
     },
     {
       image: benefit_4,
-      title: "Tăng thu nhập cá nhân",
-      desc: (
-        <p>
-          Đạt mức lương ngang bằng với lập trình viên Hàn Quốc. Trung bình mỗi
-          tháng cho nhân sự ngành IT tại Hàn là từ $2,544 - $6,169. Xem thêm
-          thông tin{" "}
-          <Link
-            href="https://www.paylab.com/kr/salaryinfo/information-technology"
-            className="underline text-[#016DB8]"
-            target="_blank"
-          >
-            tại đây
-          </Link>
-        </p>
-      ),
+      title: "Cơ hội nhận offer quốc tế với thu nhập hấp dẫn",
+      desc: "Đạt mức lương lý tưởng lên đến $5000/tháng, tùy theo năng lực, vị trí và kinh nghiệm.",
+    },
+    {
+      image: benefit_1,
+      title: "Đào tạo kỹ năng mềm, giao tiếp và văn hóa doanh nghiệp",
+      desc: "Trang bị kiến thức thực tiễn để thích nghi và phát triển trong môi trường làm việc quốc tế.",
+    },
+    {
+      image: benefit_3,
+      title: "Chuyến đi thực tế tại Hàn Quốc (số lượng giới hạn)",
+      desc: "Trải nghiệm trực tiếp văn hóa doanh nghiệp, tham quan các công ty công nghệ hàng đầu Hàn Quốc.",
     },
   ];
 
@@ -55,11 +41,11 @@ export default function Benefits() {
       >
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-xl font-bold md:text-5xl md:leading-[62px]">
-              Quyền lợi ứng viên
+            <h2 className="text-xl text-center font-bold sm:text-5xl">
+              Quyền lợi tham gia
             </h2>
-            <p className="mt-8 text-xl">
-              Ứng tuyển tham gia K-Tech College 2025, bạn sẽ được
+            <p className="mt-8 text-base md:text-xl">
+              Bạn sẽ nhận được gì khi tham gia K-tech college 2025
             </p>
           </div>
           <div className="mt-[56px] md:mt-[120px] space-y-12">

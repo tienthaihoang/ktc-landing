@@ -44,6 +44,9 @@ export default function Organization() {
             <h2 className="text-xl text-center font-bold sm:text-5xl">
               Đơn vị tổ chức & đối tác đồng hành
             </h2>
+            <p className="mt-8 text-center text-base md:text-xl">
+              Chúng tôi tuyển dụng đào tạo và kết nối nguồn nhân lực công nghệ
+            </p>
           </div>
           <div className="mt-8 sm:mt-[60px]">
             <ul className="grid gap-6 text-center sm:grid-cols-2 lg:grid-cols-2">

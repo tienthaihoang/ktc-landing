@@ -8,19 +8,23 @@ import about from "/public/about.jpg";
 
 const text = [
   {
-    title: "Giới thiệu về K-Tech",
+    title: "K-Tech College 2025 là gì?",
     description: (
       <div>
         <p>
-          <b>K-Tech College 2025</b> là chương trình đặc biệt, cung cấp cho các
-          lập trình viên các kỹ năng cần thiết, hiểu rõ về văn hóa làm việc tại
-          Hàn Quốc và tạo điều kiện để bạn tìm được công việc mong muốn tại Hàn
-          Quốc.
+          <b>K-Tech College 2025</b> (KTC 2025) là chương trình kết nối nhân lực
+          dành cho các bạn trẻ trong lĩnh vực công nghệ, do Chính phủ Hàn Quốc
+          tài trợ 100% và điều hành bởi LIKELION tại Việt Nam.
         </p>
         <p>
-          K-Tech College 2025 đóng vai trò là cầu nối việc làm tại Hàn Quốc cho
-          các lập trình viên chất lượng cao ở Việt Nam <b>hoàn toàn miễn phí</b>
-          , với nguồn tài trợ 100% từ Chính phủ Hàn Quốc.
+          Thông qua quy trình tuyển chọn kỹ lưỡng, kết nối việc làm thực tế với
+          các doanh nghiệp công nghệ hàng đầu Hàn Quốc và đào tạo kỹ năng mềm
+          thực tiễn, chương trình giúp bạn không chỉ tìm được công việc phù hợp,
+          mà còn sẵn sàng để phát triển trong môi trường làm việc quốc tế.
+        </p>
+        <p>
+          KTC 2025 không chỉ là một cơ hội việc làm, mà là hành trình trưởng
+          thành và vươn xa của những người trẻ làm công nghệ.
         </p>
       </div>
     ),
