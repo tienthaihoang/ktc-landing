@@ -11,7 +11,7 @@ export default function Benefits() {
     {
       image: benefit_2,
       title: "Kết nối trực tiếp với doanh nghiệp công nghệ Hàn Quốc",
-      desc: " Tham gia vào mạng lưới hơn 50 công ty đang tìm kiếm nhân sự công nghệ tại Việt Nam.",
+      desc: " Tham gia vào mạng lưới hơn 30 công ty đang tìm kiếm nhân sự công nghệ tại Việt Nam.",
     },
     {
       image: benefit_4,
