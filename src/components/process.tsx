@@ -2,24 +2,21 @@ import AnimationLayout from "./shared/animation-layout";
 
 const applySteps = [
   {
-    title: "Nộp đơn ứng tuyển",
-    description:
-      "Ứng viên điền đơn đăng ký và nộp hồ sơ trước hạn chót để được đưa vào danh sách xét tuyển.",
+    title: "Sàng lọc hồ sơ",
+    description: "CV sceening & Test lập trình",
   },
   {
-    title: "Kiểm tra chuyên môn",
-    description:
-      "Thực hiện bài đánh giá năng lực lập trình online. (Áp dụng cho các vị trí kỹ thuật)",
+    title: "Sơ vấn qua điện thoại",
+    description: "Trao đổi nhanh để hiểu rõ kỹ năng & định hướng của ứng viên",
   },
   {
-    title: "Phỏng vấn kỹ năng mềm",
-    description:
-      "Phỏng vấn online để đánh giá khả năng giao tiếp, làm việc nhóm và tư duy giải quyết vấn đề.",
+    title: "Kết nối trực tiếp với Doanh nghiệp",
+    description: "Kết nối → Phỏng vấn → Nhận offer → Onboarding",
   },
   {
-    title: "Xét duyệt hồ sơ",
+    title: "Đào tạo kỹ năng mềm",
     description:
-      "Được xét duyệt tham gia vào mạng lưới nhân sự tiềm năng của KTC.",
+      "Tham gia lớp đào tạo kỹ năng mềm và onboarding sau khi nhận offer",
   },
 ];
 
@@ -63,52 +60,23 @@ export default function Process() {
           </p>
         </div>
 
-        <div className="mt-8 md:mt-[60px] grid grid-cols-1 md:grid-cols-2 gap-[40px]">
-          {/* Cột applySteps */}
-          <div className="grid grid-rows-[auto,1fr,1fr,1fr,1fr] gap-[30px]">
-            <h3 className="text-lg md:text-2xl font-bold text-[#FF99AC] text-center md:text-left row-span-1">
-              Ứng tuyển
-            </h3>
-            {applySteps.map((step, index) => (
-              <div key={index} className="flex items-start gap-x-4 h-full">
-                <div className="relative flex items-center justify-start min-w-[80px] h-[60px]">
-                  <span className="text-[48px] font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#FFF0F1] to-[#E0F0FE] leading-none">
-                    {`0${index + 1}`}
-                  </span>
-                  <span className="absolute bottom-[0.75rem] right-2 w-2 h-2 rounded-full bg-[#F84C63]"></span>
-                </div>
-                <div className="text-left flex-1">
-                  <p className="text-base md:text-xl font-bold">{step.title}</p>
-                  <p className="text-sm mt-1 md:text-base text-[#7B7B8C]">
-                    {step.description}
-                  </p>
-                </div>
+        <div className="mt-8 md:mt-[60px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {applySteps.map((item, idx) => (
+            <div
+              key={idx}
+              className="h-full bg-[#FCFCFD] border border-[#E5E5E5] rounded-[20px] p-[32px_16px] flex flex-col items-center text-center shadow-[0px_64px_64px_-48px_#0F0F0F1A]"
+            >
+              <div className="w-[80px] h-[80px] flex items-center justify-center mb-6">
+                <span className="text-[48px] font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#FFF0F1] to-[#E0F0FE] leading-none">
+                  {`0${idx + 1}`}
+                </span>
               </div>
-            ))}
-          </div>
-
-          {/* Cột connectSteps */}
-          <div className="grid grid-rows-[auto,1fr,1fr,1fr,1fr] gap-[30px]">
-            <h3 className="text-lg md:text-2xl font-bold text-[#FF99AC] text-center md:text-left row-span-1">
-              Kết nối
-            </h3>
-            {connectSteps.map((step, index) => (
-              <div key={index} className="flex items-start gap-x-4 h-full">
-                <div className="relative flex items-center justify-start min-w-[80px] h-[60px]">
-                  <span className="text-[48px] font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#FFF0F1] to-[#E0F0FE] leading-none">
-                    {`0${index + 1}`}
-                  </span>
-                  <span className="absolute bottom-[0.75rem] right-2 w-2 h-2 rounded-full bg-[#F84C63]"></span>
-                </div>
-                <div className="text-left flex-1">
-                  <p className="text-base md:text-xl font-bold">{step.title}</p>
-                  <p className="text-sm mt-1 md:text-base text-[#7B7B8C]">
-                    {step.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+              <h4 className="font-bold text-lg md:text-xl mb-2">
+                {item.title}
+              </h4>
+              <p className="text-[#7B7B8C] text-base">{item.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </AnimationLayout>

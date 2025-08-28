@@ -37,6 +37,9 @@ export default function Onboarding() {
           </p>
           Remote
           <p className="text-sm font-normal">Hồ Chí Minh (Co-working space)</p>
+          <p className="text-sm font-normal">
+            <sup>(*)</sup>Tùy theo yêu cầu của mỗi Doanh nghiệp
+          </p>
         </>
       ),
     },
@@ -48,7 +51,7 @@ export default function Onboarding() {
         <div className="max-w mx-auto text-center">
           <h2 className="text-xl font-bold sm:text-5xl">Onboarding</h2>
           <p className="mt-8 text-center text-base md:text-xl">
-            Thực tập với doanh nghiệp công nghệ Hàn Quốc
+            Làm việc với doanh nghiệp công nghệ Hàn Quốc
           </p>
         </div>
         <div className="mt-8 md:mt-[60px] flex flex-col lg:flex-row items-center gap-10 lg:gap-16">

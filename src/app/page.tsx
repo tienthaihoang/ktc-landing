@@ -1,4 +1,5 @@
 import AboutUs from "@/components/about-us";
+import Advantage from "@/components/advantage";
 import Benefits from "@/components/benefits";
 import Contact from "@/components/contact";
 import FAQ from "@/components/faq";
@@ -17,6 +18,7 @@ export default function Page() {
       <Hero />
       <AboutUs />
       <Organization />
+      <Advantage />
       <Participant />
       <Benefits />
       <TrainingProgram />

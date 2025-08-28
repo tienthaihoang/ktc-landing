@@ -10,23 +10,23 @@ export default function Benefits() {
   const features = [
     {
       image: benefit_2,
-      title: "Kết nối trực tiếp với doanh nghiệp công nghệ Hàn Quốc",
-      desc: " Tham gia vào mạng lưới hơn 30 công ty đang tìm kiếm nhân sự công nghệ tại Việt Nam.",
+      title: "Kết nối với doanh nghiệp Hàn Quốc",
+      desc: "Tham gia vào mạng lưới hơn 30 công ty đang tìm kiếm nhân sự công nghệ tại Việt Nam.",
     },
     {
       image: benefit_4,
-      title: "Cơ hội nhận offer quốc tế với thu nhập hấp dẫn",
-      desc: "Đạt mức lương lý tưởng lên đến $5000/tháng, tùy theo năng lực, vị trí và kinh nghiệm.",
+      title: "Cơ hội nhận offer quốc tế",
+      desc: "Đạt mức lương lên đến $2000/tháng, tùy theo năng lực, vị trí và kinh nghiệm.",
     },
     {
       image: benefit_1,
-      title: "Đào tạo kỹ năng mềm, giao tiếp và văn hóa doanh nghiệp",
-      desc: "Trang bị kiến thức thực tiễn để thích nghi và phát triển trong môi trường làm việc quốc tế.",
+      title: "Đào tạo kỹ năng mềm",
+      desc: "Trang bị các kỹ năng và kiến thức thực tiễn để thích nghi và phát triển trong môi trường làm việc quốc tế.",
     },
     {
       image: benefit_3,
-      title: "Chuyến đi thực tế tại Hàn Quốc (số lượng giới hạn)",
-      desc: "Trải nghiệm trực tiếp văn hóa doanh nghiệp, tham quan các công ty công nghệ hàng đầu Hàn Quốc.",
+      title: "Chuyến tham quan Hàn Quốc",
+      desc: "Trải nghiệm văn hóa và tham quan doanh nghiệp công nghệ tại Hàn Quốc. Cơ hội học hỏi trực tiếp và mở rộng góc nhìn nghề nghiệp quốc tế (số lượng giới hạn).",
     },
   ];
 

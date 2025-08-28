@@ -17,7 +17,7 @@ const text = [
   {
     icon: ToolboxIcon,
     title: "Kinh nghiệm làm việc",
-    desc: "Có từ 1 năm kinh nghiệm làm việc trong lĩnh vực lập trình",
+    desc: "Có tối thiểu 2 năm kinh nghiệm làm việc trong lĩnh vực lập trình",
   },
   {
     icon: HeadCircuitIcon,
@@ -27,7 +27,7 @@ const text = [
   {
     icon: UsersThreeIcon,
     title: "Yêu cầu khác",
-    desc: "Ứng viên từ 23–35 tuổi, có kỹ năng tiếng Anh hoặc tiếng Hàn là một lợi thế",
+    desc: "Ứng viên từ 23–35 tuổi, tiếng Anh giao tiếp tốt (bắt buộc), khả năng tiếng Hàn là lợi thế",
   },
 ];
 

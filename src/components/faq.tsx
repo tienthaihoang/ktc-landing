@@ -89,46 +89,20 @@ export default function FAQ() {
       a: (
         <>
           <p>
-            Dự án tiếp nhận ứng viên dưới 35 tuổi, lý lịch rõ ràng, không có
-            tiền án tiền sự.
-          </p>
-          <p>
-            Quá trình xét tuyển bao gồm thẩm định hồ sơ, kiểm tra đầu vào và
-            phỏng vấn chuyên sâu, không yêu cầu số năm kinh nghiệm cụ thể.
+            Ứng viên từ 22 - 35 tuổi, kinh nghiệm lập trình hơn 2 năm, lý lịch
+            rõ ràng.
           </p>
         </>
       ),
     },
     {
-      q: "Quy trình ứng tuyển diễn ra như thế nào?",
+      q: "Làm sao để biết tôi đã ứng tuyển thành công?",
       a: (
         <>
-          <p>Ứng tuyển K-Tech College 2025 gồm 4 vòng:</p>
-          <p>1. CV screening (Điền form ứng tuyển)</p>
-          <p>2. Test chuyên môn (Kiến thức lập trình)</p>
-          <p>3. Phỏng vấn soft skill (Online)</p>
-          <p>4. Matching & phỏng vấn với Doanh nghiệp Hàn Quốc (Online)</p>
           <p>
-            <sup>*</sup>Chúng tôi sẽ tiến hành các vòng tiếp theo nếu bạn vượt
-            qua vòng trước đó. Kết quả sẽ được thông báo qua email trong vòng 7
-            ngày làm việc.
-          </p>
-        </>
-      ),
-    },
-    {
-      q: "Mất bao lâu để tham gia chương trình K-Tech College 2025?",
-      a: (
-        <>
-          <p>Hoàn tất quy trình ứng tuyển: khoảng 2 tuần</p>
-          <p>
-            Tham gia kết nối và phỏng vấn với doanh nghiệp Hàn Quốc: khoảng 1
-            tháng
-          </p>
-          <p>
-            Tổng thời gian từ lúc ứng tuyển đến khi bắt đầu chương trình cùng
-            doanh nghiệp là khoảng 1,5 tháng (có thể thay đổi tùy tiến độ từng
-            vòng).
+            Chúng tôi sẽ tiến hành các vòng tiếp theo nếu bạn vượt qua vòng
+            trước đó. Kết quả sẽ được thông báo qua email trong vòng 7 ngày làm
+            việc.
           </p>
         </>
       ),
@@ -138,7 +112,7 @@ export default function FAQ() {
       a: (
         <>
           <p>
-            KTC 2025 có nền tảng tuyển dụng riêng biệt dành cho các ứng viên
+            K-Tech College 2025 có nền tảng tuyển dụng riêng biệt dành cho các ứng viên
             xuất sắc vượt qua vòng sơ tuyển.
           </p>
           <p>
@@ -153,7 +127,7 @@ export default function FAQ() {
       q: "Cần chuẩn bị gì khi tham gia phỏng vấn với doanh nghiệp?",
       a: (
         <>
-          <p>CV & Portfolio chỉn chu bằng Tiếng Anh </p>
+          <p>CV & Portfolio chỉnh chu bằng Tiếng Anh </p>
           <p>Phỏng vấn 100% bằng Tiếng Anh</p>
           <p>Luyện tập kỹ năng trả lời phỏng vấn thường xuyên</p>
         </>

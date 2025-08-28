@@ -24,12 +24,12 @@ export default function Hero() {
             <h1 className="mx-auto text-xl sm:text-4xl font-bold lg:text-5xl max-w-sm sm:max-w-md md:max-w-none uppercase">
               <span className="flex items-center justify-center gap-2 flex-wrap">
                 <span className="w-full lg:w-auto">
-                  Tuyển thực tập sinh làm việc cho
+                  Tuyển thực IT làm việc từ xa
                 </span>
               </span>
               <span className="flex items-center gap-2 justify-center flex-wrap bg-clip-text sm:mt-5">
                 <span className="w-full lg:w-auto">
-                  doanh nghiệp tại Hàn Quốc
+                  cho doanh nghiệp tại Hàn Quốc
                 </span>
               </span>
             </h1>
@@ -45,10 +45,10 @@ export default function Hero() {
                 </Link>
               </Button>
             </div>
-            <div className="text-sx font-bold bg-gradient-to-b from-[#ED174C] to-[#006DB8] bg-clip-text text-transparent">
+            {/* <div className="text-sx font-bold bg-gradient-to-b from-[#ED174C] to-[#006DB8] bg-clip-text text-transparent">
               <p>MIỄN PHÍ THAM GIA</p>
               Hạn cuối ứng tuyển 01/08/2025
-            </div>
+            </div> */}
             <div className="relative w-full h-[120px] block mt-8 md:hidden">
               <Image
                 src="/illustration_mb.png"

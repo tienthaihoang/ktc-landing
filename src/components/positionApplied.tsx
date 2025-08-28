@@ -47,7 +47,7 @@ export default function PositionApplied() {
   ];
 
   return (
-    <section className="py-14">
+    <section className="py-[40px] md:py-[100px] bg-[#F2FAFF]">
       <AnimationLayout
         className="h-full duration-1000 delay-300"
         isInviewState={{
@@ -70,7 +70,7 @@ export default function PositionApplied() {
             spaceBetween={24}
             slidesPerView={1}
             loop={true}
-            autoplay={{ delay: 2500 }}
+            autoplay={{ delay: 5000 }}
             breakpoints={{
               640: { slidesPerView: 1 },
               1024: { slidesPerView: 2 },
@@ -79,7 +79,7 @@ export default function PositionApplied() {
           >
             {jobs.map((job, index) => (
               <SwiperSlide key={index}>
-                <div className="flex flex-col md:flex-row items-center p-4 md:p-6 bg-white rounded-2xl shadow-md h-full">
+                <div className="flex flex-col md:flex-row items-center p-6 md:p-8 bg-white rounded-2xl shadow-md h-full">
                   <div className="w-full md:w-1/3 mb-4 md:mb-0 md:mr-4">
                     <Image
                       src={job.imageUrl}
@@ -90,10 +90,10 @@ export default function PositionApplied() {
                     />
                   </div>
                   <div className="flex-1 text-center md:text-left">
-                    <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-800">
+                    <h3 className="text-xl md:text-2xl font-semibold mb-2 text-gray-800">
                       {job.title}
                     </h3>
-                    <p className="text-sm md:text-base text-gray-600">
+                    <p className="text-base md:text-lg text-gray-600">
                       {job.description}
                     </p>
                   </div>

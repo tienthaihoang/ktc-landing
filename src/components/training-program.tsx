@@ -25,8 +25,13 @@ export default function TrainingProgram() {
     {
       icon: TargetIcon,
       title: "MỤC TIÊU ĐÀO TẠO",
-      content:
-        "Trang bị cho học viên kiến thức về văn hóa doanh nghiệp Hàn Quốc, kỹ năng giao tiếp tiếng Anh, phong cách làm việc chuyên nghiệp và khả năng kết nối hiệu quả trong ngành IT quốc tế",
+      content: (
+        <>
+          <p className="text-sm font-normal">&#8226; Hiểu sâu văn hoá và môi trường doanh nghiệp Hàn Quốc</p>
+          <p className="text-sm font-normal">&#8226; Nâng cao kỹ năng giao tiếp tiếng Anh trong công việc</p>
+          <p className="text-sm font-normal">&#8226; Rèn luyện phong cách làm việc chuyên nghiệp</p>
+        </>
+      ),
     },
   ];
 

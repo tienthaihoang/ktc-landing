@@ -12,19 +12,16 @@ const text = [
     description: (
       <div>
         <p>
-          <b>K-Tech College 2025</b> (KTC 2025) là chương trình kết nối nhân lực
-          dành cho các bạn trẻ trong lĩnh vực công nghệ, do Chính phủ Hàn Quốc
-          tài trợ 100% và điều hành bởi LIKELION tại Việt Nam.
+          K-Tech College 2025 là <b>chương trình kết nối việc làm và đào tạo</b>{" "}
+          dành cho những lập trình viên trẻ tài năng tại Việt Nam, được Chính
+          phủ Hàn Quốc tài trợ 100% và LIKELION trực tiếp vận hành.
         </p>
         <p>
-          Thông qua quy trình tuyển chọn kỹ lưỡng, kết nối việc làm thực tế với
-          các doanh nghiệp công nghệ hàng đầu Hàn Quốc và đào tạo kỹ năng mềm
-          thực tiễn, chương trình giúp bạn không chỉ tìm được công việc phù hợp,
-          mà còn sẵn sàng để phát triển trong môi trường làm việc quốc tế.
-        </p>
-        <p>
-          KTC 2025 không chỉ là một cơ hội việc làm, mà là hành trình trưởng
-          thành và vươn xa của những người trẻ làm công nghệ.
+          Chương trình không chỉ mở ra <b>cánh cửa việc làm tại các doanh nghiệp
+          công nghệ Hàn Quốc</b>, mà còn đồng hành trong việc <b>phát triển kỹ năng mềm
+          và tư duy làm việc toàn cầu</b>. Đây chính là bệ phóng giúp bạn tìm được
+          công việc phù hợp, nâng tầm bản thân và sẵn sàng bứt phá sự nghiệp
+          trong môi trường quốc tế.
         </p>
       </div>
     ),
