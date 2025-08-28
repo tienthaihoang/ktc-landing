@@ -53,7 +53,7 @@ export default function Process() {
       }}
     >
       <div className="container py-[40px] md:py-[120px]">
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="mx-auto text-center">
           <h2 className="text-xl font-bold sm:text-5xl">Hành trình K-Tech College 2025</h2>
           <p className="mt-8 text-center text-base md:text-xl">
             Quy trình ứng tuyển sẽ như thế nào?
