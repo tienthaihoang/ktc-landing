@@ -20,11 +20,11 @@ export default function Page() {
       <Organization />
       <Advantage />
       <Participant />
+      <PositionApplied />
       <Benefits />
+      <Process />
       <TrainingProgram />
       <Onboarding />
-      <PositionApplied />
-      <Process />
       <ImageGallery />
       <FAQ />
       <Contact />

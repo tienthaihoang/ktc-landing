@@ -67,11 +67,11 @@ export default function Process() {
               className="h-full bg-[#FCFCFD] border border-[#E5E5E5] rounded-[20px] p-[32px_16px] flex flex-col items-center text-center shadow-[0px_64px_64px_-48px_#0F0F0F1A]"
             >
               <div className="w-[80px] h-[80px] flex items-center justify-center mb-6">
-                <span className="text-[48px] font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#FFF0F1] to-[#E0F0FE] leading-none">
+                <span className="text-[48px] font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#FDA4AF] to-[#3B82F6] leading-none">
                   {`0${idx + 1}`}
                 </span>
               </div>
-              <h4 className="font-bold text-lg md:text-xl mb-2">
+              <h4 className="font-bold text-lg text-pink-500 md:text-xl mb-2">
                 {item.title}
               </h4>
               <p className="text-[#7B7B8C] text-base">{item.description}</p>

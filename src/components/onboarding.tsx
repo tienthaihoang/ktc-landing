@@ -31,14 +31,9 @@ export default function Onboarding() {
       title: "ĐỊA ĐIỂM",
       content: (
         <>
-          Onsite
+          Onsite/Remote
           <p className="text-sm font-normal">
-            Hàn Quốc/ tỉnh thành tại Việt Nam theo yêu cầu của Doanh nghiệp
-          </p>
-          Remote
-          <p className="text-sm font-normal">Hồ Chí Minh (Co-working space)</p>
-          <p className="text-sm font-normal">
-            <sup>(*)</sup>Tùy theo yêu cầu của mỗi Doanh nghiệp
+            Tùy theo yêu cầu của mỗi Doanh nghiệp
           </p>
         </>
       ),

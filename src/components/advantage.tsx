@@ -51,7 +51,7 @@ export default function Advantage() {
                   key={idx}
                   className="flex flex-col items-center justify-center space-y-3 p-[56px_16px] sm:p-[30px] rounded-[20px] border bg-[#FCFCFD] border-[#EFEEED] shadow-[0px_64px_64px_-48px_#0F0F0F1A]"
                 >
-                  <h4 className="text-lg font-semibold whitespace-pre-line">
+                  <h4 className="text-lg text-pink-500 font-semibold whitespace-pre-line">
                     {item.title.split("\n").map((line, i) => (
                       <span key={i}>
                         {line}
