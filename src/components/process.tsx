@@ -6,7 +6,7 @@ const applySteps = [
     description: "CV sceening & Test lập trình",
   },
   {
-    title: "Sơ vấn qua điện thoại",
+    title: "Phỏng vấn sơ bộ",
     description: "Trao đổi nhanh để hiểu rõ kỹ năng & định hướng của ứng viên",
   },
   {
@@ -17,29 +17,6 @@ const applySteps = [
     title: "Đào tạo kỹ năng mềm",
     description:
       "Tham gia lớp đào tạo kỹ năng mềm và onboarding sau khi nhận offer",
-  },
-];
-
-const connectSteps = [
-  {
-    title: "Matching trực tiếp với doanh nghiệp Hàn Quốc",
-    description:
-      "Kết nối ứng viên với các công ty công nghệ phù hợp thông qua hệ thống tuyển dụng chuyên biệt của chương trình.",
-  },
-  {
-    title: "Phỏng vấn và Nhận offer từ các công ty phù hợp",
-    description:
-      "Trực tiếp phỏng vấn cùng doanh nghiệp và tiến tới nhận offer chính thức.",
-  },
-  {
-    title: "Tham gia lớp đào tạo kỹ năng mềm",
-    description:
-      "Ứng viên kết nối thành công sẽ được đào tạo về kỹ năng mềm – giúp dễ dàng thích nghi trong môi trường quốc tế.",
-  },
-  {
-    title: "Onboarding",
-    description:
-      "Hoàn thành đạt yêu cầu lớp đào tạo, ứng viên sẽ chính thức onboarding.",
   },
 ];
 

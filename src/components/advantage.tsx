@@ -14,7 +14,7 @@ export default function Advantage() {
     {
       title:
         "Đa dạng các vị trí tuyển dụng",
-      desc: "Từ Backend, Frontend, Mobile & AI đến Game developer – Cơ hội cho mọi Developer",
+      desc: "Từ Backend, Frontend, Mobile & AI đến Game Developer – Cơ hội cho mọi Developer",
     },
     {
       title: "Hỗ trợ xuyên suốt quá trình ứng tuyển",

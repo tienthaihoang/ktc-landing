@@ -45,7 +45,7 @@ export default function Benefits() {
               Quyền lợi tham gia
             </h2>
             <p className="mt-8 text-base md:text-xl">
-              Bạn sẽ nhận được gì khi tham gia K-tech college 2025
+              Bạn sẽ nhận được gì khi tham gia K-tech College 2025
             </p>
           </div>
           <div className="mt-[56px] md:mt-[120px] space-y-12">

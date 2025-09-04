@@ -12,7 +12,7 @@ const text = [
     description: (
       <div>
         <p>
-          K-Tech College 2025 là <b>chương trình kết nối việc làm và đào tạo</b>{" "}
+          K-Tech College 2025 là <b>chương trình kết nối việc làm</b>{" "}
           dành cho những lập trình viên trẻ tài năng tại Việt Nam, được Chính
           phủ Hàn Quốc tài trợ 100% và LIKELION trực tiếp vận hành.
         </p>
