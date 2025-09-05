@@ -61,7 +61,7 @@ export default function PositionApplied() {
               Cơ hội việc làm
             </h2>
             <p className="mt-8 text-center text-base md:text-xl">
-              Các vị trí bạn có thể ứng tuyển trong khuôn khổ KTC 2025
+              Các vị trí bạn có thể ứng tuyển trong khuôn khổ K-Tech College 2025
             </p>
           </div>
           <Swiper
